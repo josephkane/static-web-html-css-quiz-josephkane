@@ -1,0 +1,59 @@
+
+
+*	{
+	box-sizing: border-box;
+}
+
+
+
+
+/*---------------------
+
+BASIC ELEMENTS
+
+----------------------*/
+
+
+article	{
+	border: solid 1px lightblue;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+h1 	{
+	text-align: center;
+}
+
+
+article h1	{
+	border: 1px solid lightgrey;
+	margin-top: 0;
+}
+
+img	{
+	width: 80%;
+}
+
+
+/*---------------------
+
+LAYOUT
+
+----------------------*/
+
+
+.mainContent	{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.cardOne,
+.cardTwo	{
+	margin-right: 50px;
+}
+}
+
+
+
