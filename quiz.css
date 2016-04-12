@@ -13,6 +13,10 @@ BASIC ELEMENTS
 
 ----------------------*/
 
+body	{
+	font-family: "Roboto", sans-serif;
+}
+
 
 article	{
 	border: solid 1px lightblue;
@@ -34,6 +38,20 @@ article h1	{
 
 img	{
 	width: 80%;
+	display: block;
+	margin: auto;
+	border: 1px solid black;
+	box-shadow: -10px 5px 5px darkgrey;
+}
+
+h5	{
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+ul	{
+	list-style: none;
+	padding-left: 20px;
 }
 
 
@@ -49,11 +67,64 @@ LAYOUT
 	margin: 0 auto;
 }
 
+.cardOne	{
+	margin-bottom: 30px;
+}
+
 .cardOne,
 .cardTwo	{
 	margin-right: 50px;
 }
+
+.availability	{
+	color: yellow;
+	background-color: grey;
 }
+
+.availability p	{
+	margin-left: 20px;
+}
+
+.description	{
+	margin-top: 30px;
+}
+
+.description p	{
+	font-size: .8em;
+	width: 90%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.sectionTwo h4,
+.sectionThree	h4 {
+	margin-left: 10px;
+}
+
+#descriptionOne	{
+	min-height: 127px;
+}
+
+#descriptionThree	{
+	min-height: 105px;
+}
+
+
+#descriptionFour	{
+	min-height:
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
