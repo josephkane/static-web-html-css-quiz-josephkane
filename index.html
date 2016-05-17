@@ -1,0 +1,277 @@
+
+<!--
+Your task is to build a grid of cards for a company's products. Here's the requirements for the basic structure of the cards.
+
+Each card should be an article.
+Each card should take up 30% of the width of the browser window.
+Each product should contain a header element that, itself, contains an h1 element where the product's title will be written.
+Each product should have three sections.
+
+	The first section should contain three child block elements.
+	The first element contains the product image.
+	The second element contains the product description.
+	The third element contains the product availability (e.g. "Available" or "Not Available")
+
+	The second section contains product specifications.
+	This section should have a header containing the word "Specifications"
+	This section should contain two block elements
+	The first block element specifies the size.
+	The second block element specifies the weight.
+	This section should contain a footer.
+	The footer contains text stating when the product specifications become invalid.
+
+	The third section contains the product pricing.
+	This section should contain a header.
+	This section should contain three block elements.
+	Each block element contains information about the price for different quantities.
+
+Additional style requirements
+
+The entire card has a solid 1px border that is lightblue.
+The card title has a dotted 1px border that is lightgray.
+The title and product image are centered.
+Notice that the text for the description in the image is justified.
+The text for the product specification details and pricing details is bold.
+The availability element extends the full width of the card, with a dark grey background and yellow text.
+-->
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<!-- HTML & CSS Quiz (4.8.16) -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Samuel L's Movies</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="quiz.css">
+</head>
+
+
+<body>
+	<header>
+		<h1>Buy Samuel L's greatest hits here!</h1>
+	</header>
+
+	<div class="mainContent">
+	<!-- card one -->
+		<article class="cardOne">
+			<header>
+				<h1>Unbreakable</h1>
+			</header>
+
+			<section class="sectionOne">
+
+				<img src="img/unbreakable.png" alt="unbreakable">
+
+				<div id="descriptionOne" class="description">
+					<p>
+						<!-- start slipsum code -->
+
+						"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends."
+
+						<!-- please do not remove this line -->
+
+						<div style="display:none;">
+						<a href="http://slipsum.com">lorem ipsum</a></div>
+
+						<!-- end slipsum code -->
+					</p>
+				</div>
+
+				<div class="availability">
+					<p>Available</p>
+				</div>
+			</section>
+
+			<section class="sectionTwo">
+				<header>
+					<h4>Specifications</h4>
+				</header>
+
+				<ul>
+					<li>Length: 1:42</li>
+					<li>Rated: PG-13</li>
+				</ul>
+				<h5>Product availability at time of purchase not guaranteed.</h5>
+			</section>
+
+			<section class="sectionThree">
+				<h4>Price</h4>
+				<ul>
+					<li>1-5: $9.99</li>
+					<li>5-10: $7.99</li>
+					<li>10+: $5.99</li>
+				</ul>
+			</section>
+
+		</article>
+
+	<!-- card two -->
+		<article class="cardTwo">
+			<header>
+				<h1>Pulp Fiction</h1>
+			</header>
+
+			<section class="sectionOne">
+
+				<img src="img/pulpFiction.jpg" alt="pulpFiction">
+
+				<div id="descriptionTwo" class="description">
+					<p>
+						<!-- start slipsum code -->
+
+						"Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass."
+
+						<!-- please do not remove this line -->
+
+						<div style="display:none;">
+						<a href="http://slipsum.com">lorem ipsum</a></div>
+
+						<!-- end slipsum code -->
+					</p>
+				</div>
+
+				<div class="availability">
+					<p>Available</p>
+				</div>
+			</section>
+
+			<section class="sectionTwo">
+				<header>
+					<h4>Specifications</h4>
+				</header>
+
+				<ul>
+					<li>Length: 2:34</li>
+					<li>Rated: R</li>
+				</ul>
+				<h5>Product availability at time of purchase not guaranteed.</h5>
+			</section>
+
+			<section class="sectionThree">
+				<h4>Price</h4>
+				<ul>
+					<li>1-5: $9.99</li>
+					<li>5-10: $7.99</li>
+					<li>10+: $5.99</li>
+				</ul>
+			</section>
+
+		</article>
+
+	<!-- card three -->
+		<article class="cardThree">
+			<header>
+				<h1>Snakes On A Plane</h1>
+			</header>
+
+			<section class="sectionOne">
+
+				<img src="img/snakes.jpg" alt="snakes">
+
+				<div id="descriptionThree" class="description">
+					<p>
+						<!-- start slipsum code -->
+
+						"I've had it with these mothafuckin' snakes, on this mothafuckin' plane! Everybody strap in, I'm about to open some fuckin' windows!"
+
+						<!-- please do not remove this line -->
+
+						<div style="display:none;">
+						<a href="http://slipsum.com">lorem ipsum</a></div>
+
+						<!-- end slipsum code -->
+					</p>
+				</div>
+
+				<div class="availability">
+					<p>Available</p>
+				</div>
+			</section>
+
+			<section class="sectionTwo">
+				<header>
+					<h4>Specifications</h4>
+				</header>
+
+				<ul>
+					<li>Length: 1:45</li>
+					<li>Rated: R</li>
+				</ul>
+				<h5>Product availability at time of purchase not guaranteed.</h5>
+			</section>
+
+			<section class="sectionThree">
+				<h4>Price</h4>
+				<ul>
+					<li>1-5: $9.99</li>
+					<li>5-10: $7.99</li>
+					<li>10+: $5.99</li>
+				</ul>
+			</section>
+
+		</article>
+
+	<!-- card four -->
+		<article class="cardFour">
+			<header>
+				<h1>Black Snake Moan</h1>
+			</header>
+
+			<section class="sectionOne">
+
+				<img src="img/blackSnakeMoan.jpg" alt="blackSnakeMoan">
+
+				<div id="descriptionFour" class="description">
+					<p>
+						<!-- start slipsum code -->
+
+						"Collar yo dog!"
+
+						<!-- please do not remove this line -->
+
+						<div style="display:none;">
+						<a href="http://slipsum.com">lorem ipsum</a></div>
+
+						<!-- end slipsum code -->
+					</p>
+				</div>
+
+				<div class="availability">
+					<p>Available</p>
+				</div>
+			</section>
+
+			<section class="sectionTwo">
+				<header>
+					<h4>Specifications</h4>
+				</header>
+
+				<ul>
+					<li>Length: 1:56</li>
+					<li>Rated: R</li>
+				</ul>
+				<h5>Product availability at time of purchase not guaranteed.</h5>
+			</section>
+
+			<section class="sectionThree">
+				<h4>Price</h4>
+				<ul>
+					<li>1-5: $9.99</li>
+					<li>5-10: $7.99</li>
+					<li>10+: $5.99</li>
+				</ul>
+			</section>
+
+		</article>
+	</div>
+
+</body>
+</html>
